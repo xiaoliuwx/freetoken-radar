@@ -1,0 +1,40 @@
+name: sync-data
+
+on:
+  schedule:
+    # 每 20 分钟同步一次（GitHub 定时任务可能有几分钟延迟）
+    - cron: "*/20 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch offers and news
+        run: python crawler/fetch_offers.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "freetoken-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if git diff --quiet -- data/; then
+            echo "data unchanged, skip commit"
+            exit 0
+          fi
+          git add data/offers.json data/offers.js
+          git commit -m "chore(data): auto sync $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

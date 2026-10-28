@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#080910" />
+<title>FreeToken Radar · 免费 AI 额度工作台</title>
+<meta name="description" content="把 28 家国内外大模型平台的免费 Token 额度、限时活动和领取入口收进一个工作台：筛选、对比、收藏、直达官方。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236d6bf5'/%3E%3Cstop offset='1' stop-color='%2332c5f5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='url(%23g)'/%3E%3Cpath d='M20 22h24M20 32h16M20 42h10' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/css/v2.css" />
+</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 4 2.5 5.2 5.5.8-4 3.9 1 5.5-5-2.7-5 2.7 1-5.5-4-3.9 5.5-.8L12 4Z"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></symbol>
+  <symbol id="i-table" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M3 9.5h18M9 9.5V19.5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 3s5 4.5 5 9a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.5 2 2 2.5 2 2.5S9 6.5 12 3Z"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4"/><path d="m11 11 9 9M17 17l2-2M14 14l2-2"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 18a8 8 0 1 1 16 0"/><path d="m12 14 4-4"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 2.5 20h19L12 4Z"/><path d="M12 10v4M12 17.5v.5"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24"><path d="M8 5v14M8 5 5 8M8 5l3 3M16 19V5M16 19l-3-3M16 19l3-3"/></symbol>
+</svg>
+
+<div class="bg" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span>
+  <span class="mesh"></span><span class="grain"></span>
+</div>
+
+<div class="app">
+
+  <aside class="rail glass" id="rail" aria-label="主导航">
+    <a class="brand" href="#top">
+      <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h9M5 17h5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+      <span class="brand-txt">FreeToken<em>Radar</em></span>
+    </a>
+
+    <nav class="rail-nav">
+      <a class="rail-link" href="#limited" data-spy="limited">
+        <svg><use href="#i-fire"/></svg><span>限时活动</span><b class="pill-num warn" id="railLimited">5</b>
+      </a>
+      <a class="rail-link active" href="#offers" data-spy="offers">
+        <svg><use href="#i-grid"/></svg><span>额度库</span><b class="pill-num" id="railOffers">28</b>
+      </a>
+      <a class="rail-link" href="#news" data-spy="news">
+        <svg><use href="#i-spark"/></svg><span>实时资讯</span><b class="pill-num" id="railNews">17</b>
+      </a>
+      <a class="rail-link" href="#tips" data-spy="tips">
+        <svg><use href="#i-shield"/></svg><span>避坑指南</span>
+      </a>
+    </nav>
+
+    <div class="rail-divider"></div>
+
+    <button class="rail-saved" id="savedBtn" type="button" aria-pressed="false">
+      <svg><use href="#i-star"/></svg><span>我的清单</span><b class="pill-num" id="railSaved">0</b>
+    </button>
+
+    <div class="rail-foot">
+      <div class="rail-live">
+        <span class="live-dot" id="liveDot"></span>
+        <span id="liveLabel">实时同步</span>
+      </div>
+      <div class="rail-time" id="liveTime">--</div>
+      <button class="rail-refresh" id="refreshBtn" type="button">
+        <svg><use href="#i-refresh"/></svg><span>立即刷新</span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="content">
+
+    <header class="topbar glass" id="topbar">
+      <button class="icon-btn only-mobile" id="railToggle" type="button" aria-label="打开导航">
+        <svg><use href="#i-menu"/></svg>
+      </button>
+
+      <div class="search" role="search">
+        <svg class="s-ic"><use href="#i-search"/></svg>
+        <input id="searchInput" type="search" placeholder="搜平台、模型或关键词（按 / 聚焦）" autocomplete="off" aria-label="搜索平台" />
+        <kbd class="s-kbd">/</kbd>
+        <button class="s-clear" id="clearSearch" type="button" aria-label="清空搜索" hidden><svg><use href="#i-close"/></svg></button>
+      </div>
+
+      <div class="seg" id="viewToggle" role="tablist" aria-label="视图切换">
+        <button class="seg-btn on" data-view="grid" role="tab" aria-selected="true" title="卡片视图"><svg><use href="#i-grid"/></svg><span>卡片</span></button>
+        <button class="seg-btn" data-view="table" role="tab" aria-selected="false" title="表格视图"><svg><use href="#i-table"/></svg><span>表格</span></button>
+      </div>
+
+      <div class="select-wrap">
+        <svg class="sel-ic"><use href="#i-sort"/></svg>
+        <select id="sortSelect" aria-label="排序方式">
+          <option value="weight">推荐排序</option>
+          <option value="quota">额度优先</option>
+          <option value="verified">最近核验</option>
+          <option value="deadline">临近截止</option>
+        </select>
+        <svg class="sel-caret"><use href="#i-chevron"/></svg>
+      </div>
+
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="切换深浅色" title="切换深浅色">
+        <svg class="ic-sun"><use href="#i-sun"/></svg>
+        <svg class="ic-moon"><use href="#i-moon"/></svg>
+      </button>
+    </header>
+
+    <main id="top">
+
+      <header class="page-head">
+        <div>
+          <h1>免费 AI 额度工作台</h1>
+          <p class="page-sub">筛选、对比、收藏 28 家平台的免费 Token，点开即领。</p>
+        </div>
+        <div class="page-meta">
+          <span class="chip-lite"><b id="headCount">28</b> 个平台</span>
+          <span class="chip-lite">更新 <b id="headTime">--</b></span>
+        </div>
+      </header>
+
+      <section class="sec" id="limited" aria-labelledby="h-limited">
+        <div class="sec-head">
+          <div class="sec-title">
+            <h2 id="h-limited">限时活动</h2>
+            <span class="sec-sub" id="limitedSub">带截止时间的额度，先抢这些</span>
+          </div>
+          <a class="sec-more" href="#offers" id="allLimited">查看全部<svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="limited-grid" id="limitedGrid"></div>
+      </section>
+
+      <section class="sec" id="offers" aria-labelledby="h-offers">
+        <div class="sec-head">
+          <div class="sec-title">
+            <h2 id="h-offers">额度库</h2>
+            <span class="sec-sub" id="offersSub">官方入口直达 · 星标可收藏</span>
+          </div>
+        </div>
+
+        <div class="toolbar glass">
+          <div class="seg seg-sm" id="regionSeg" role="tablist" aria-label="按地区筛选">
+            <button class="seg-btn on" data-region="all" role="tab" aria-selected="true">全部</button>
+            <button class="seg-btn" data-region="国内" role="tab" aria-selected="false">国内</button>
+            <button class="seg-btn" data-region="海外" role="tab" aria-selected="false">海外</button>
+            <button class="seg-btn" data-region="本地" role="tab" aria-selected="false">本地</button>
+          </div>
+          <div class="chips" id="filterChips" role="tablist" aria-label="按类型筛选">
+            <button class="chip on" data-cat="all" role="tab" aria-selected="true">全部</button>
+            <button class="chip" data-cat="official" role="tab" aria-selected="false">长期免费</button>
+            <button class="chip" data-cat="newbie" role="tab" aria-selected="false">新人赠送</button>
+            <button class="chip" data-cat="limited" role="tab" aria-selected="false">限时活动</button>
+            <button class="chip" data-cat="oss" role="tab" aria-selected="false">开源自部署</button>
+          </div>
+        </div>
+
+        <div class="resultbar">
+          <span id="resultCount">共 28 个平台</span>
+          <span class="active-filters" id="activeFilters" hidden></span>
+          <span class="result-hint">星标收藏 · 点击卡片跳转官方</span>
+          <button class="filter-btn only-mobile" id="filterBtn" type="button">
+            <svg><use href="#i-filter"/></svg>筛选
+          </button>
+        </div>
+
+        <div class="grid" id="offerGrid"></div>
+
+        <div class="table-wrap glass" id="tableWrap" hidden>
+          <table class="tbl" id="offerTable">
+            <thead>
+              <tr>
+                <th class="c-star" scope="col"><span class="sr">收藏</span></th>
+                <th scope="col" data-sort="name">平台</th>
+                <th scope="col" data-sort="region" class="c-region">地区</th>
+                <th scope="col" data-sort="quota">额度</th>
+                <th scope="col" class="c-cat">类型</th>
+                <th scope="col" data-sort="deadline" class="c-deadline">截止</th>
+                <th scope="col" class="c-act"><span class="sr">操作</span></th>
+              </tr>
+            </thead>
+            <tbody id="offerTbody"></tbody>
+          </table>
+        </div>
+
+        <div class="empty glass" id="emptyState" hidden>
+          <svg><use href="#i-search"/></svg>
+          <p id="emptyText">没有匹配的平台</p>
+          <button class="btn btn-ghost" id="resetFilter" type="button">清空筛选</button>
+        </div>
+      </section>
+
+      <section class="sec" id="news" aria-labelledby="h-news">
+        <div class="sec-head">
+          <div class="sec-title">
+            <h2 id="h-news">实时资讯</h2>
+            <span class="sec-sub">爬虫抓取官方公告与公开资讯，标题直达原文</span>
+          </div>
+          <span class="badge-live glass"><span class="live-dot"></span>自动更新</span>
+        </div>
+        <div class="news-list glass" id="newsList"></div>
+      </section>
+
+      <section class="sec" id="tips" aria-labelledby="h-tips">
+        <div class="sec-head">
+          <div class="sec-title">
+            <h2 id="h-tips">避坑指南</h2>
+            <span class="sec-sub">免费额度真香，这些坑每年都有人踩</span>
+          </div>
+        </div>
+        <div class="tips-grid" id="tipsGrid"></div>
+      </section>
+
+      <footer class="foot">
+        <div class="foot-inner glass">
+          <div class="foot-brand">
+            <span class="brand-mark sm"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h9M5 17h5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+            <div>
+              <strong>FreeToken Radar</strong>
+              <p>信息聚合自各平台官方页面与公开资讯，不售卖、不代领任何 API Key；额度以官方控制台为准。</p>
+            </div>
+          </div>
+          <div class="foot-meta">
+            <span>更新 <b id="footTime">--</b></span>
+            <span>数据源 <b id="footSources">--</b></span>
+            <a href="index-v1.html">旧版界面</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+</div>
+
+<nav class="tabbar glass only-mobile" aria-label="底部导航">
+  <a href="#limited" data-spy="limited"><svg><use href="#i-fire"/></svg><span>限时</span></a>
+  <a href="#offers" data-spy="offers" class="on"><svg><use href="#i-grid"/></svg><span>额度</span></a>
+  <a href="#news" data-spy="news"><svg><use href="#i-spark"/></svg><span>资讯</span></a>
+  <a href="#tips" data-spy="tips"><svg><use href="#i-shield"/></svg><span>避坑</span></a>
+</nav>
+
+<div class="sheet-mask" id="sheetMask" hidden></div>
+<div class="sheet glass" id="filterSheet" hidden role="dialog" aria-modal="true" aria-label="筛选">
+  <div class="sheet-grab"></div>
+  <div class="sheet-head"><strong>筛选与排序</strong><button class="icon-btn" id="sheetClose" type="button" aria-label="关闭"><svg><use href="#i-close"/></svg></button></div>
+  <div class="sheet-body">
+    <div class="sheet-group">
+      <span class="sheet-label">地区</span>
+      <div class="seg seg-sm" id="regionSegMobile" role="tablist" aria-label="按地区筛选">
+        <button class="seg-btn on" data-region="all" role="tab" aria-selected="true">全部</button>
+        <button class="seg-btn" data-region="国内" role="tab" aria-selected="false">国内</button>
+        <button class="seg-btn" data-region="海外" role="tab" aria-selected="false">海外</button>
+        <button class="seg-btn" data-region="本地" role="tab" aria-selected="false">本地</button>
+      </div>
+    </div>
+    <div class="sheet-group">
+      <span class="sheet-label">类型</span>
+      <div class="chips chips-wrap" id="filterChipsMobile" role="tablist" aria-label="按类型筛选">
+        <button class="chip on" data-cat="all" role="tab" aria-selected="true">全部</button>
+        <button class="chip" data-cat="official" role="tab" aria-selected="false">长期免费</button>
+        <button class="chip" data-cat="newbie" role="tab" aria-selected="false">新人赠送</button>
+        <button class="chip" data-cat="limited" role="tab" aria-selected="false">限时活动</button>
+        <button class="chip" data-cat="oss" role="tab" aria-selected="false">开源自部署</button>
+        <button class="chip" data-cat="saved" role="tab" aria-selected="false">★ 我的清单</button>
+      </div>
+    </div>
+    <div class="sheet-group">
+      <span class="sheet-label">排序</span>
+      <div class="chips chips-wrap" id="sortChips">
+        <button class="chip on" data-sort="weight">推荐</button>
+        <button class="chip" data-sort="quota">额度优先</button>
+        <button class="chip" data-sort="verified">最近核验</button>
+        <button class="chip" data-sort="deadline">临近截止</button>
+      </div>
+    </div>
+  </div>
+  <div class="sheet-foot">
+    <button class="btn btn-ghost" id="sheetReset" type="button">重置</button>
+    <button class="btn btn-primary" id="sheetDone" type="button">查看结果</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data/offers.js"></script>
+<script src="assets/js/v2.js"></script>
+</body>
+</html>

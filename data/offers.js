@@ -1,0 +1,866 @@
+/* 自动生成，请勿手改。运行 crawler/fetch_offers.py 重新生成 */
+window.__FREE_TOKEN_DATA__ = {
+  "meta": {
+    "title": "FreeToken Radar · 免费 AI Token 实时雷达",
+    "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
+    "updated": "2026-10-29",
+    "generated_at": "2026-10-29T01:03:47+08:00",
+    "generated_label": "2026-10-29 01:03",
+    "offline": false,
+    "stats": {
+      "total": 28,
+      "official": 10,
+      "newbie": 9,
+      "limited": 5,
+      "oss": 4,
+      "live": 11
+    },
+    "sources": [
+      {
+        "name": "FreeToken 官方台账",
+        "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/main/README.md",
+        "ok": true,
+        "items": 6
+      },
+      {
+        "name": "什么值得买 · AI 权益清单",
+        "url": "https://post.smzdm.com/p/awwo0lpk/",
+        "ok": true,
+        "items": 2
+      },
+      {
+        "name": "OpenRouter 免费模型",
+        "url": "https://openrouter.ai/api/v1/models",
+        "ok": true,
+        "items": 3
+      }
+    ]
+  },
+  "offers": [
+    {
+      "id": "gemini",
+      "name": "Google Gemini API",
+      "brand": "Gemini",
+      "mono": "G",
+      "c1": "#4c8dff",
+      "c2": "#a45bff",
+      "region": "海外",
+      "category": "official",
+      "quota": "Flash 系列免费层",
+      "quotaNum": "1440 次/天",
+      "detail": "Gemini 2.5 Flash / Flash-Lite 提供免费输入输出 Token，实时 RPM/TPM/RPD 在 AI Studio 按项目显示；3.x Pro 系列已移出免费层。",
+      "tags": [
+        "多模态",
+        "1M 上下文",
+        "需海外网络"
+      ],
+      "url": "https://aistudio.google.com/",
+      "docs": "https://ai.google.dev/gemini-api/docs/pricing",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 99
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter 免费模型",
+      "brand": "OpenRouter",
+      "mono": "OR",
+      "c1": "#8b7cff",
+      "c2": "#4ac8ff",
+      "region": "海外",
+      "category": "official",
+      "quota": ":free 模型池",
+      "quotaNum": "50 次/日",
+      "detail": "聚合 300+ 模型，带 :free 后缀的模型免费调用，20 RPM / 50 请求每日；账户累计充值满 $10 后上限提升至 1000 请求/日。",
+      "tags": [
+        "一个 Key 通吃",
+        "OpenAI 兼容",
+        "免费池轮换"
+      ],
+      "url": "https://openrouter.ai/models?max_price=0",
+      "docs": "https://openrouter.ai/pricing",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 97
+    },
+    {
+      "id": "groq",
+      "name": "GroqCloud 免费计划",
+      "brand": "Groq",
+      "mono": "GQ",
+      "c1": "#ff7a45",
+      "c2": "#ff3d71",
+      "region": "海外",
+      "category": "official",
+      "quota": "Free Plan 限速额度",
+      "quotaNum": "1000 次/天",
+      "detail": "LPU 推理极快，openai/gpt-oss-20b 免费档 30 RPM、1000 RPD、8000 TPM；限速按模型维度区分，不适合当 SLA。",
+      "tags": [
+        "极低延迟",
+        "语音/Whisper",
+        "限速按模型"
+      ],
+      "url": "https://console.groq.com/",
+      "docs": "https://console.groq.com/docs/rate-limits",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 94
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare Workers AI",
+      "brand": "Cloudflare",
+      "mono": "CF",
+      "c1": "#ffa726",
+      "c2": "#ff6b00",
+      "region": "海外",
+      "category": "official",
+      "quota": "每日免费 Neurons",
+      "quotaNum": "10,000 Neurons/日",
+      "detail": "边缘推理，每天免费 10,000 Neurons（注意不是 10,000 次请求），不同模型折算的请求数不同。",
+      "tags": [
+        "边缘部署",
+        "Workers 集成",
+        "按算力计量"
+      ],
+      "url": "https://dash.cloudflare.com/",
+      "docs": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 88
+    },
+    {
+      "id": "zhipu-flash",
+      "name": "智谱 GLM-Flash 系列",
+      "brand": "智谱 AI",
+      "mono": "GLM",
+      "c1": "#2f6bff",
+      "c2": "#00c2ff",
+      "region": "国内",
+      "category": "official",
+      "quota": "输入输出全免费",
+      "quotaNum": "长期免费",
+      "detail": "GLM-4.7-Flash（200K 上下文）、GLM-4-Flash、GLM-4.6V-Flash 等多款模型输入输出全免费，适合中文任务与 Agent 工作流。",
+      "tags": [
+        "中文最优",
+        "200K 上下文",
+        "OpenAI 兼容"
+      ],
+      "url": "https://open.bigmodel.cn/",
+      "docs": "https://open.bigmodel.cn/pricing",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 98
+    },
+    {
+      "id": "siliconflow",
+      "name": "硅基流动 SiliconFlow",
+      "brand": "SiliconFlow",
+      "mono": "SF",
+      "c1": "#7b5cff",
+      "c2": "#22d3ee",
+      "region": "国内",
+      "category": "newbie",
+      "quota": "注册赠送 + 零价模型",
+      "quotaNum": "2000 万 Token",
+      "detail": "注册赠送 2000 万 Token（约 14 元），9B 以下小模型长期免费；embedding / OCR / 语音 / 翻译等指定模型价格标为「免费」。",
+      "tags": [
+        "国内低延迟",
+        "200+ 模型",
+        "额度长期有效"
+      ],
+      "url": "https://cloud.siliconflow.cn/",
+      "docs": "https://siliconflow.cn/pricing",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 96
+    },
+    {
+      "id": "bailian",
+      "name": "阿里云百炼 · 通义千问",
+      "brand": "阿里云百炼",
+      "mono": "QW",
+      "c1": "#ff6a00",
+      "c2": "#ff9d2e",
+      "region": "国内",
+      "category": "newbie",
+      "quota": "每个模型新人额度",
+      "quotaNum": "100 万 Token/模型",
+      "detail": "首次开通北京地域可获按模型划分的新人免费额度，通常 100 万 Token / 模型、90 天有效；务必开启「免费额度用完即停」。",
+      "tags": [
+        "模型最全",
+        "90 天有效",
+        "需实名"
+      ],
+      "url": "https://bailian.console.aliyun.com/",
+      "docs": "https://help.aliyun.com/zh/model-studio/new-free-quota",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 93
+    },
+    {
+      "id": "volcengine",
+      "name": "火山方舟 · 豆包",
+      "brand": "火山方舟",
+      "mono": "DB",
+      "c1": "#1664ff",
+      "c2": "#00d0ff",
+      "region": "国内",
+      "category": "newbie",
+      "quota": "体验 + 每日奖励",
+      "quotaNum": "200 万 Token/日",
+      "detail": "安心体验模式每模型 50 万 Token 一次性；协作奖励计划每天发放 200 万 Token。注意要在模型广场手动逐个开通模型，否则 Key 有效但调不通。",
+      "tags": [
+        "字节生态",
+        "每日刷新",
+        "需手动开通模型"
+      ],
+      "url": "https://console.volcengine.com/ark",
+      "docs": "https://www.volcengine.com/docs/82379",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 91
+    },
+    {
+      "id": "hunyuan",
+      "name": "腾讯云混元",
+      "brand": "腾讯混元",
+      "mono": "HY",
+      "c1": "#0052d9",
+      "c2": "#00a4ff",
+      "region": "国内",
+      "category": "newbie",
+      "quota": "通用资源包",
+      "quotaNum": "100 万 Token/年",
+      "detail": "通用资源包 100 万 Token、有效期 1 年，Embedding 另赠 100 万 Token；Hy3 / Hy4 preview 等模型不定期有限免活动。",
+      "tags": [
+        "有效期长",
+        "Embedding 加赠",
+        "腾讯生态"
+      ],
+      "url": "https://cloud.tencent.com/product/hunyuan",
+      "docs": "https://cloud.tencent.com/document/product/1729",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 87
+    },
+    {
+      "id": "qianfan",
+      "name": "百度千帆 · 文心 ERNIE",
+      "brand": "百度千帆",
+      "mono": "ERNIE",
+      "c1": "#2932e1",
+      "c2": "#5b8cff",
+      "region": "国内",
+      "category": "official",
+      "quota": "Speed 系列永久免费",
+      "quotaNum": "QPS 50",
+      "detail": "ERNIE-Speed-8K 长期免费、QPS 50；ERNIE-4.5 系列每模型 100 万 Token（约 3 个月）；DeepSeek 命中缓存时段有超低价。",
+      "tags": [
+        "永久免费档",
+        "高 QPS",
+        "合规场景"
+      ],
+      "url": "https://qianfan.cloud.baidu.com/",
+      "docs": "https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 85
+    },
+    {
+      "id": "xfyun",
+      "name": "讯飞星辰 MaaS",
+      "brand": "讯飞星火",
+      "mono": "XF",
+      "c1": "#1f6fff",
+      "c2": "#00b8ff",
+      "region": "国内",
+      "category": "newbie",
+      "quota": "实名赠送 + 开源模型 0 元",
+      "quotaNum": "10 亿 Token / 31 天",
+      "detail": "星火 X2.6 注册并实名可领 10 亿 Token（31 天有效，含 1M 上下文）；开源模型在 MaaS 上 0 元不限量。领取时记得取消「用完继续计费」。",
+      "tags": [
+        "语音能力强",
+        "1M 上下文",
+        "需取消自动续费"
+      ],
+      "url": "https://maas.xfyun.cn/",
+      "docs": "https://www.xfyun.cn/doc/spark/",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 92
+    },
+    {
+      "id": "sensenova",
+      "name": "商汤 SenseNova",
+      "brand": "商汤日日新",
+      "mono": "SN",
+      "c1": "#00c9a7",
+      "c2": "#0a8fdc",
+      "region": "国内",
+      "category": "official",
+      "quota": "多款模型免费",
+      "quotaNum": "6 款长期免费",
+      "detail": "SenseNova 系列 6 款模型长期免费；小浣熊 3 款（含 DeepSeek-V4.1-Flash）在 10-31 前系数 0 限免。",
+      "tags": [
+        "多模态",
+        "限时叠加",
+        "国产自研"
+      ],
+      "url": "https://platform.sensenova.cn/",
+      "docs": "https://platform.sensenova.cn/doc",
+      "deadline": "2026-10-31",
+      "verified": "2026-10-28",
+      "weight": 80
+    },
+    {
+      "id": "longcat",
+      "name": "美团 LongCat",
+      "brand": "LongCat",
+      "mono": "LC",
+      "c1": "#ffd100",
+      "c2": "#ff9f0a",
+      "region": "国内",
+      "category": "newbie",
+      "quota": "注册赠送",
+      "quotaNum": "1000 万 Token",
+      "detail": "注册送 1000 万 Tokens，填写邀请码双方各加 1000 万（最高 2000 万），约 30 天有效，优先消耗临期额度。",
+      "tags": [
+        "邀请翻倍",
+        "30 天有效",
+        "长文本"
+      ],
+      "url": "https://longcat.chat/",
+      "docs": "https://longcat.chat/",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 78
+    },
+    {
+      "id": "qiniu",
+      "name": "七牛云 Conatus",
+      "brand": "七牛云",
+      "mono": "QN",
+      "c1": "#00a0ff",
+      "c2": "#00e0c0",
+      "region": "国内",
+      "category": "limited",
+      "quota": "每日赠送",
+      "quotaNum": "1 亿 Token/日",
+      "detail": "认证用户每天白送 1 亿 Token（充值超 100 元升 10 亿），用完即停不偷扣。活动期 10-24 至 11-30。",
+      "tags": [
+        "每日刷新",
+        "用完即停",
+        "活动期"
+      ],
+      "url": "https://www.qiniu.com/ai/free-models/conatus-2026",
+      "docs": "https://www.qiniu.com/ai/free-models/conatus-2026",
+      "deadline": "2026-11-30",
+      "verified": "2026-10-28",
+      "weight": 95
+    },
+    {
+      "id": "zcode",
+      "name": "智谱 ZCode 每日额度",
+      "brand": "ZCode",
+      "mono": "ZC",
+      "c1": "#5b6bff",
+      "c2": "#00d6ff",
+      "region": "国内",
+      "category": "limited",
+      "quota": "每日 GLM-5.3-Flash",
+      "quotaNum": "3 亿 Token/日",
+      "detail": "ZCode App 内每日 19:00（北京时间）开领，当天 23:00 至次日 09:00 可用；需升级到最新版并切到 Global Building 选 GLM-5.3-Flash。",
+      "tags": [
+        "每日开抢",
+        "夜间窗口",
+        "编程向"
+      ],
+      "url": "https://zcode.bigmodel.cn/",
+      "docs": "https://zcode.bigmodel.cn/",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 96
+    },
+    {
+      "id": "qoder",
+      "name": "阿里 Qoder",
+      "brand": "Qoder",
+      "mono": "QD",
+      "c1": "#6c5ce7",
+      "c2": "#00b4d8",
+      "region": "国内",
+      "category": "limited",
+      "quota": "Qwen3.8-Flash 免 Credits",
+      "quotaNum": "10,240 Credits",
+      "detail": "Qwen3.8-Flash 调用系数 0 不耗 Credits；Community Boost 四轮礼包合计 10,240 SOTA Credits；每日 10:00 登录另领 100 通用 Credits。",
+      "tags": [
+        "AI 编程",
+        "礼包限时领",
+        "24 小时有效"
+      ],
+      "url": "https://qoder.cn/",
+      "docs": "https://qoder.cn/",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 90
+    },
+    {
+      "id": "scnet",
+      "name": "国家超算互联网",
+      "brand": "超算互联网",
+      "mono": "SC",
+      "c1": "#0f766e",
+      "c2": "#22d3ee",
+      "region": "国内",
+      "category": "limited",
+      "quota": "普惠词元 + 夜间免费",
+      "quotaNum": "3000 万 Token/人",
+      "detail": "实名用户长期可领 3000 万普惠词元；订阅用户每晚 21:00–次日 09:00 免费用（限时活动至 10-30）。",
+      "tags": [
+        "国家队",
+        "夜间免费",
+        "实名认证"
+      ],
+      "url": "https://www.scnet.cn/",
+      "docs": "https://www.scnet.cn/",
+      "deadline": "2026-10-30",
+      "verified": "2026-10-28",
+      "weight": 84
+    },
+    {
+      "id": "wechat-miniapp",
+      "name": "微信小程序成长计划",
+      "brand": "微信开放平台",
+      "mono": "WX",
+      "c1": "#07c160",
+      "c2": "#00d68f",
+      "region": "国内",
+      "category": "limited",
+      "quota": "混元 Token + 生图",
+      "quotaNum": "10 亿 Token",
+      "detail": "二期计划提供 10 亿混元 Token + 10 万张 AI 生图额度，申请成功起 6 个月有效，仅限微信小程序 / 云开发服务端使用。",
+      "tags": [
+        "小程序专用",
+        "6 个月有效",
+        "含生图"
+      ],
+      "url": "https://developers.weixin.qq.com/",
+      "docs": "https://developers.weixin.qq.com/miniprogram/dev/",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 82
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi 开放平台",
+      "brand": "Kimi",
+      "mono": "KM",
+      "c1": "#111827",
+      "c2": "#4b5563",
+      "region": "国内",
+      "category": "newbie",
+      "quota": "新人代金券",
+      "quotaNum": "¥15 体验金",
+      "detail": "新用户赠送 15 元代金券，256K 长上下文与多模态理解见长；K3.1 Pro 网页/App 对话长期免费，API 为付费。",
+      "tags": [
+        "超长上下文",
+        "多模态",
+        "API 付费"
+      ],
+      "url": "https://platform.kimi.com/",
+      "docs": "https://platform.kimi.com/docs",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 79
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek 开放平台",
+      "brand": "DeepSeek",
+      "mono": "DS",
+      "c1": "#4d6bfe",
+      "c2": "#7aa2ff",
+      "region": "国内",
+      "category": "newbie",
+      "quota": "按量计费（低价）",
+      "quotaNum": "0.27 元/百万起",
+      "detail": "V4 预览版输入低至 0.27 元/百万 Token；旧「注册送 500 万 Token」无现行官方证据，请以 Platform 账单页为准。",
+      "tags": [
+        "极致性价比",
+        "OpenAI 兼容",
+        "无固定赠额"
+      ],
+      "url": "https://platform.deepseek.com/",
+      "docs": "https://api-docs.deepseek.com/quick_start/pricing",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 86
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere Trial Key",
+      "brand": "Cohere",
+      "mono": "CO",
+      "c1": "#39594d",
+      "c2": "#7ee0b8",
+      "region": "海外",
+      "category": "official",
+      "quota": "Evaluation 试用密钥",
+      "quotaNum": "1000 次/月",
+      "detail": "Evaluation Key 免费用于测试，试用密钥每月合计限制 1000 次 API 调用；Command / Embed / Rerank 全系可试。",
+      "tags": [
+        "RAG 友好",
+        "Embedding 强",
+        "仅测试用"
+      ],
+      "url": "https://dashboard.cohere.com/",
+      "docs": "https://docs.cohere.com/v2/docs/rate-limits",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 76
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral La Plateforme",
+      "brand": "Mistral",
+      "mono": "MI",
+      "c1": "#ff7000",
+      "c2": "#ffb703",
+      "region": "海外",
+      "category": "official",
+      "quota": "免费实验层",
+      "quotaNum": "按模型限速",
+      "detail": "Console 提供 free tier 实验额度，按模型维度限速；具体资格以当前账号 Console 显示为准。",
+      "tags": [
+        "欧洲合规",
+        "小模型高效",
+        "按账号核定"
+      ],
+      "url": "https://console.mistral.ai/",
+      "docs": "https://docs.mistral.ai/inference/pricing",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 74
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA Build / NIM",
+      "brand": "NVIDIA",
+      "mono": "NV",
+      "c1": "#76b900",
+      "c2": "#b6e34a",
+      "region": "海外",
+      "category": "official",
+      "quota": "NIM 试用 API",
+      "quotaNum": "按账号核定",
+      "detail": "build.nvidia.com 可直接试用各家开源模型的托管 API；「免费一年 / 每天 5 万次」属误传，额度以控制台为准。",
+      "tags": [
+        "开源模型全",
+        "GPU 生态",
+        "额度需核实"
+      ],
+      "url": "https://build.nvidia.com/",
+      "docs": "https://docs.nvidia.com/nim/",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 72
+    },
+    {
+      "id": "cerebras",
+      "name": "Cerebras Inference",
+      "brand": "Cerebras",
+      "mono": "CB",
+      "c1": "#f2542d",
+      "c2": "#ff9f68",
+      "region": "海外",
+      "category": "newbie",
+      "quota": "一次性试用金",
+      "quotaNum": "$5 / 30 天",
+      "detail": "官方注明提供有效支付方式可得一次性 $5 试用金，激活后 30 天失效，属促销活动需核实资格。",
+      "tags": [
+        "超高速推理",
+        "需绑卡",
+        "促销性质"
+      ],
+      "url": "https://cloud.cerebras.ai/",
+      "docs": "https://www.cerebras.ai/pricing",
+      "deadline": null,
+      "verified": "2026-10-22",
+      "weight": 70
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama 本地部署",
+      "brand": "Ollama",
+      "mono": "OL",
+      "c1": "#334155",
+      "c2": "#94a3b8",
+      "region": "本地",
+      "category": "oss",
+      "quota": "本地推理",
+      "quotaNum": "永久免费",
+      "detail": "一条命令拉起 Llama / Qwen / DeepSeek 蒸馏版，完全离线、无 Token 计费，只吃显存和电费。",
+      "tags": [
+        "完全离线",
+        "隐私安全",
+        "吃显存"
+      ],
+      "url": "https://ollama.com/",
+      "docs": "https://github.com/ollama/ollama",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 83
+    },
+    {
+      "id": "hunyuan-oss",
+      "name": "混元 Hy-SimulMT 开源",
+      "brand": "腾讯混元开源",
+      "mono": "MT",
+      "c1": "#0b4f9e",
+      "c2": "#3aa0ff",
+      "region": "本地",
+      "category": "oss",
+      "quota": "权重开源可自部署",
+      "quotaNum": "无 API 计费",
+      "detail": "端到端实时语音同传模型，平均延迟约 3 秒，自带零样本音色克隆、中英双语，权重开源可自部署。",
+      "tags": [
+        "实时同传",
+        "音色克隆",
+        "自部署"
+      ],
+      "url": "https://hunyuan.tencent.com/",
+      "docs": "https://github.com/Tencent-Hunyuan",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 81
+    },
+    {
+      "id": "minimax-oss",
+      "name": "MiniMax M3.1 Flash 开源",
+      "brand": "MiniMax",
+      "mono": "MM",
+      "c1": "#e11d48",
+      "c2": "#fb7185",
+      "region": "本地",
+      "category": "oss",
+      "quota": "权重开源",
+      "quotaNum": "自部署免费",
+      "detail": "M3.1 Flash 开放权重可自行部署，显存与电费成本自担；不是「免费白用」，适合有算力的团队。",
+      "tags": [
+        "开放权重",
+        "多模态",
+        "需算力"
+      ],
+      "url": "https://www.minimaxi.com/",
+      "docs": "https://github.com/MiniMax-AI",
+      "deadline": null,
+      "verified": "2026-10-28",
+      "weight": 77
+    },
+    {
+      "id": "kimi-oss",
+      "name": "Kimi K3.1 Pro 权重开放",
+      "brand": "Kimi 开源",
+      "mono": "K3",
+      "c1": "#111827",
+      "c2": "#6b7280",
+      "region": "本地",
+      "category": "oss",
+      "quota": "完整权重下载",
+      "quotaNum": "11-04 开放",
+      "detail": "官方公告 11-04 开放完整权重可免费下载自部署；网页/App 对话长期免费，API 仍为付费，别混淆。",
+      "tags": [
+        "旗舰开源",
+        "11-04 上线",
+        "API 另计费"
+      ],
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "docs": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "deadline": "2026-11-04",
+      "verified": "2026-10-28",
+      "weight": 89
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-10-30",
+      "title": "临期提醒：腾讯 Token Plan 限时价 / 基元律动活动到期",
+      "summary": "腾讯 5 款模型积分价下调至 10-30 12:00；基元律动买一送一、实名 18 元额度同天截止。",
+      "source": "AI 模型优惠速报",
+      "url": "https://post.smzdm.com/p/awwo0lpk/",
+      "tag": "预警"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Kimi K3.1 Pro 限流致歉：全体订阅会员补偿 25% 额度",
+      "summary": "所有档位订阅会员，按月度额度总额的 25% 做一次一次性重置补偿（约等于白送一周用量）；用量不足 25% 的直接清零重算。无需申领，用量条自动刷新。",
+      "source": "什么值得买 · AI 权益清单",
+      "url": "https://kimi.ai",
+      "tag": "实时",
+      "live": true
+    },
+    {
+      "date": "2026-10-29",
+      "title": "智谱 ZCode 每日 3 亿 GLM-5.3-Flash 免费额度上线",
+      "summary": "App 内每日发放 3 亿 GLM-5.3-Flash Token，需升级到最新版，领取后切到 Global Building 并选 GLM-5.3-Flash 模型。",
+      "source": "什么值得买 · AI 权益清单",
+      "url": "https://zcode.bigmodel.cn",
+      "tag": "实时",
+      "live": true
+    },
+    {
+      "date": "2026-10-29",
+      "title": "免费模型 · Recursive: Flint (free)",
+      "summary": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recu…",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/recursive/flint-v1.0:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
+      "date": "2026-10-29",
+      "title": "免费模型 · XingChen: Xing4.0 29B A4B (free)",
+      "summary": "Xing4.0-29B-A4B is an open-weight mixture-of-experts language model from China Telecom's AI team (TeleAI) and the successor to the…",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
+      "date": "2026-10-29",
+      "title": "免费模型 · NVIDIA: Nemotron 3.5 Super VL (free)",
+      "summary": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B to…",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
+      "date": "2026-10-28",
+      "title": "腾讯混元 Hy-SimulMT 实时语音同传模型开源",
+      "summary": "端到端同传、平均延迟约 3 秒、零样本音色克隆、中英双语，权重开源可自部署。",
+      "source": "腾讯混元",
+      "url": "https://hunyuan.tencent.com/",
+      "tag": "开源"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "火山方舟 kimi-k2.7-code 下线，别名仍指向旧模型",
+      "summary": "10-28 14:00 正式下线，迁移到 kimi-k3；kimi-latest 别名未改会静默换模型，记得改代码。",
+      "source": "火山方舟公告",
+      "url": "https://console.volcengine.com/ark",
+      "tag": "预警"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "阿里 Qoder Community Boost：最高 10,240 SOTA Credits",
+      "summary": "1024 欢迎礼 + 2,048 / 3,072 / 4,096 三批礼包，发放后 3 天内领取、领到 24 小时有效。",
+      "source": "Ailyre AI Briefing",
+      "url": "https://qoder.cn/",
+      "tag": "国内"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "七牛云 Conatus 上线：认证用户每天 1 亿 Token",
+      "summary": "活动期 10-24 至 11-30，充值超 100 元升级至每日 10 亿，用完即停不偷扣。",
+      "source": "七牛云官方活动页",
+      "url": "https://www.qiniu.com/ai/free-models/conatus-2026",
+      "tag": "活动"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Google Gemini API · 官方免费层",
+      "summary": "Gemini 2.5 Flash / Flash-Lite 等部分模型有免费输入输出 Token；实时 RPM/TPM/RPD 按项目和模型显示。",
+      "source": "FreeToken 官方台账",
+      "url": "https://aistudio.google.com/",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-10-22",
+      "title": "OpenRouter 免费模型 · 官方免费层",
+      "summary": "免费模型 20 RPM、50 请求/日；账户累计购买至少 $10 额度后上限可至 1,000 请求/日。",
+      "source": "FreeToken 官方台账",
+      "url": "https://openrouter.ai/models?max_price=0",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Cloudflare Workers AI · 官方免费层",
+      "summary": "每天免费 10,000 Neurons；不是每天 10,000 次请求。",
+      "source": "FreeToken 官方台账",
+      "url": "https://dash.cloudflare.com/",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-10-22",
+      "title": "硅基流动 SiliconFlow · 部分模型免费",
+      "summary": "公开价格页：tencent/Hunyuan-MT-7B、BAAI/bge-m3 等指定模型标记“免费”。",
+      "source": "FreeToken 官方台账",
+      "url": "https://cloud.siliconflow.cn/",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-10-22",
+      "title": "阿里云百炼 / Qwen · 试用 / 新人额度",
+      "summary": "新人各模型通常赠送 100 万 Token，限华北2（北京）地域，通常 90 天有效；以模型详情为准。",
+      "source": "FreeToken 官方台账",
+      "url": "https://bailian.console.aliyun.com/",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Cohere Evaluation API · 试用 / 新人额度",
+      "summary": "Evaluation Key 免费测试；试用密钥每月合计限制 1,000 次 API 调用。",
+      "source": "FreeToken 官方台账",
+      "url": "https://dashboard.cohere.com/",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-10-22",
+      "title": "FreeToken 深度复核：Hugging Face 免费积分已取消",
+      "summary": "Free 账户每月赠送计算积分归零；百炼新人额度确认为「按模型 100 万 / 90 天 / 仅北京地域」。",
+      "source": "GitHub · AIPMAndy/FreeToken",
+      "url": "https://github.com/AIPMAndy/FreeToken",
+      "tag": "核验"
+    }
+  ],
+  "tips": [
+    {
+      "icon": "shield",
+      "title": "没有通用兑换码",
+      "text": "网上卖「新人激活码 / 内部福利码」的基本是钓鱼。只在官方控制台创建 Key，别在陌生页面填手机号。"
+    },
+    {
+      "icon": "clock",
+      "title": "注意额度有效期",
+      "text": "百炼新人额度通常 90 天、讯飞 31 天、LongCat 约 30 天。领完先看有效期，别囤着过期。"
+    },
+    {
+      "icon": "alert",
+      "title": "关掉「用完继续计费」",
+      "text": "阿里云百炼、讯飞星火等平台默认可能自动转按量付费，领取时务必打开「免费额度用完即停」。"
+    },
+    {
+      "icon": "key",
+      "title": "Key 不要进前端",
+      "text": "不要把真实 Token 写进仓库、网页、截图或 Issue。用环境变量 + 最小权限 + 额度告警。"
+    },
+    {
+      "icon": "gauge",
+      "title": "免费层不等于 SLA",
+      "text": "免费档普遍有 RPM/RPD/TPM 限制，429 要用指数退避重试，不要靠多账号批量注册绕过。"
+    },
+    {
+      "icon": "refresh",
+      "title": "政策会变",
+      "text": "本页数据来自公开渠道，标注了核验日期。领取前一定以官方页面实时显示为准。"
+    }
+  ]
+};

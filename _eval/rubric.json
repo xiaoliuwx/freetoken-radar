@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "threshold": 92,
+  "minDimension": 85,
+  "dimensions": [
+    { "key": "functional", "name": "功能性", "weight": 25 },
+    { "key": "interaction", "name": "交互细节", "weight": 20 },
+    { "key": "visual", "name": "视觉样式", "weight": 20 },
+    { "key": "performance", "name": "跟手性", "weight": 15 },
+    { "key": "a11y", "name": "可访问性", "weight": 10 },
+    { "key": "content", "name": "信息架构", "weight": 10 }
+  ]
+}

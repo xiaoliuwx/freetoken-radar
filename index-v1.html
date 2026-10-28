@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#07080f" />
+<title>FreeToken Radar · 免费 AI Token 实时雷达</title>
+<meta name="description" content="实时聚合国内外大模型平台的免费 Token / API 额度资讯与官方领取入口：Gemini、OpenRouter、Groq、智谱 GLM、硅基流动、阿里云百炼、火山方舟等，一键直达。" />
+<meta property="og:title" content="FreeToken Radar · 免费 AI Token 实时雷达" />
+<meta property="og:description" content="28 个平台的免费额度、限时活动与领取入口，实时同步，一键直达。" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c6cff'/%3E%3Cstop offset='1' stop-color='%2335d1ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='url(%23g)'/%3E%3Cpath d='M20 22h24M20 32h16M20 42h10' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- 图标雪碧图 -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 2.5 20h19L12 4Z"/><path d="M12 10v4M12 17.5v.5"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4"/><path d="m11 11 9 9M17 17l2-2M14 14l2-2"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 18a8 8 0 1 1 16 0"/><path d="m12 14 4-4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24"><path d="M12 3s5 4.5 5 9a5 5 0 0 1-10 0c0-2 1-3.5 2-4.5.5 2 2 2.5 2 2.5S9 6.5 12 3Z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m9 8-4 4 4 4M15 8l4 4-4 4"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2V5Z"/><path d="M8 3v18"/></symbol>
+</svg>
+
+<!-- 背景 -->
+<div class="backdrop" aria-hidden="true">
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="blob blob-c"></div>
+  <div class="blob blob-d"></div>
+  <div class="grid-lines"></div>
+  <div class="grain"></div>
+</div>
+
+<header class="nav-wrap">
+  <div class="nav glass">
+    <a class="brand" href="#top" aria-label="回到顶部">
+      <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h9M5 17h5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+      <span class="brand-text">FreeToken<span class="brand-dot">Radar</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="主导航">
+      <a href="#offers">免费额度</a>
+      <a href="#news">实时资讯</a>
+      <a href="#tips">避坑指南</a>
+      <a href="#guide">5 分钟上手</a>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="切换深浅色" title="切换深浅色">
+        <svg class="ic-sun"><use href="#i-sun"/></svg>
+        <svg class="ic-moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm" href="#offers">开始领取<svg><use href="#i-arrow"/></svg></a>
+      <button class="icon-btn only-mobile" id="menuBtn" type="button" aria-label="打开菜单" aria-expanded="false">
+        <svg><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <noscript>
+    <div class="noscript glass">本页清单由 JavaScript 渲染，请启用后再查看；原始数据见 <code>data/offers.json</code>。</div>
+  </noscript>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="pill">
+        <span class="live-dot" id="liveDot"></span>
+        <span id="liveLabel">正在同步数据…</span>
+        <span class="pill-sep">·</span>
+        <span id="liveTime">--</span>
+      </span>
+      <h1>免费 AI Token，<br /><span class="grad">一屏看全</span></h1>
+      <p class="lede">
+        实时汇总 <strong id="statTotal">28</strong> 家国内外大模型平台的免费额度、限时活动与官方领取入口。
+        爬虫每 <strong>5 分钟</strong> 自动核对，页面每 <strong>60 秒</strong> 同步一次，点开即领，不用再翻十几个群和博客。
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#offers">
+          <svg><use href="#i-fire"/></svg>查看免费额度
+        </a>
+        <button class="btn btn-ghost" id="refreshBtn" type="button">
+          <svg class="spin-on-load"><use href="#i-refresh"/></svg>立即刷新数据
+        </button>
+      </div>
+      <dl class="hero-stats">
+        <div class="stat glass">
+          <dt>收录平台</dt>
+          <dd><span class="num" data-count="28" id="statOffer">28</span><span class="unit">家</span></dd>
+        </div>
+        <div class="stat glass">
+          <dt>长期免费档</dt>
+          <dd><span class="num" data-count="10" id="statFree">10</span><span class="unit">个</span></dd>
+        </div>
+        <div class="stat glass">
+          <dt>实时资讯</dt>
+          <dd><span class="num" data-count="8" id="statNews">8</span><span class="unit">条</span></dd>
+        </div>
+      </dl>
+    </div>
+
+    <aside class="hero-panel glass" aria-label="调用示例">
+      <div class="panel-bar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="panel-title">quickstart.sh</span>
+        <button class="copy-btn" data-copy="API=https://openrouter.ai/api/v1/chat/completions
+curl $API \
+  -H &quot;Authorization: Bearer $KEY&quot; \
+  -H &quot;Content-Type: application/json&quot; \
+  -d '{&quot;model&quot;:&quot;...:free&quot;,&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;hi&quot;}]}'" type="button" aria-label="复制示例命令">
+          <svg><use href="#i-copy"/></svg>
+        </button>
+      </div>
+      <pre class="code"><code><span class="c-com"># 免费模型统一走 OpenAI 兼容协议</span>
+<span class="c-key">API</span>=https://openrouter.ai/api/v1/chat/completions
+<span class="c-key">curl</span> $API \
+  -H <span class="c-str">"Authorization: Bearer $KEY"</span> \
+  -H <span class="c-str">"Content-Type: application/json"</span> \
+  -d <span class="c-str">'{"model":"...:free",</span>
+       <span class="c-str">"messages":[{"role":"user",</span>
+                    <span class="c-str">"content":"hi"}]}'</span></code></pre>
+      <div class="panel-foot">
+        <span class="chip"><svg><use href="#i-spark"/></svg>0 成本起步</span>
+        <span class="chip"><svg><use href="#i-code"/></svg>OpenAI 兼容</span>
+        <span class="chip"><svg><use href="#i-shield"/></svg>Key 不外泄</span>
+      </div>
+      <div class="float-badge fb-1">🔥 每日 1 亿 Token</div>
+      <div class="float-badge fb-2">⚡ 20 RPM 免费</div>
+    </aside>
+  </section>
+
+  <!-- OFFERS -->
+  <section class="section" id="offers">
+    <div class="section-head">
+      <div>
+        <h2>免费额度清单</h2>
+        <p class="sub">按「长期免费 / 新人赠送 / 限时活动 / 开源自部署」分类，额度与有效期均标注来源。</p>
+      </div>
+      <div class="live-status glass" title="爬虫自动刷新状态">
+        <span class="live-dot"></span>
+        <span id="statusText">实时</span>
+        <span class="sep">|</span>
+        <span id="statusMeta">等待数据…</span>
+      </div>
+    </div>
+
+    <div class="toolbar glass">
+      <div class="search">
+        <svg><use href="#i-search"/></svg>
+        <input id="searchInput" type="search" placeholder="搜索平台 / 模型 / 关键词，按 / 聚焦" autocomplete="off" aria-label="搜索平台" />
+        <button class="clear-btn" id="clearSearch" type="button" aria-label="清空搜索" hidden><svg><use href="#i-close"/></svg></button>
+      </div>
+      <div class="chips" id="filterChips" role="tablist" aria-label="分类筛选">
+        <button class="chip-btn active" data-filter="all" role="tab" aria-selected="true">全部</button>
+        <button class="chip-btn" data-filter="official" role="tab" aria-selected="false">长期免费</button>
+        <button class="chip-btn" data-filter="newbie" role="tab" aria-selected="false">新人赠送</button>
+        <button class="chip-btn" data-filter="limited" role="tab" aria-selected="false">限时活动</button>
+        <button class="chip-btn" data-filter="oss" role="tab" aria-selected="false">开源自部署</button>
+      </div>
+      <div class="sort">
+        <select id="sortSelect" aria-label="排序方式">
+          <option value="weight">推荐排序</option>
+          <option value="quota">额度优先</option>
+          <option value="verified">最近核验</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="result-line">
+      <span id="resultCount">共 28 个平台</span>
+      <span class="result-hint">点击卡片右下角「立即领取」跳转官方页面</span>
+    </div>
+
+    <div class="grid" id="offerGrid"></div>
+    <div class="empty glass" id="emptyState" hidden>
+      <svg><use href="#i-search"/></svg>
+      <p>没有匹配的平台，换个关键词试试</p>
+      <button class="btn btn-ghost btn-sm" id="resetFilter" type="button">清空筛选</button>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="section" id="news">
+    <div class="section-head">
+      <div>
+        <h2>实时资讯</h2>
+        <p class="sub">爬虫抓取官方公告与公开资讯，按时间倒序排列，标题可直达原文。</p>
+      </div>
+      <span class="badge-live glass"><span class="live-dot"></span>自动更新</span>
+    </div>
+    <ol class="timeline glass" id="timeline"></ol>
+  </section>
+
+  <!-- TIPS -->
+  <section class="section" id="tips">
+    <div class="section-head">
+      <div>
+        <h2>避坑指南</h2>
+        <p class="sub">免费额度是真香，但这些坑每年都有人踩。</p>
+      </div>
+    </div>
+    <div class="tips-grid" id="tipsGrid"></div>
+  </section>
+
+  <!-- GUIDE -->
+  <section class="section" id="guide">
+    <div class="section-head">
+      <div>
+        <h2>5 分钟上手</h2>
+        <p class="sub">拿到 Key 之后，三步跑通第一条免费请求。</p>
+      </div>
+    </div>
+    <div class="guide-grid">
+      <ol class="steps glass">
+        <li>
+          <span class="step-no">01</span>
+          <div><h3>挑一个平台</h3><p>国内优先智谱 GLM-Flash / 硅基流动，海外优先 Gemini / OpenRouter，延迟和额度都够用。</p></div>
+        </li>
+        <li>
+          <span class="step-no">02</span>
+          <div><h3>控制台创建 Key</h3><p>只从官方控制台创建，写进环境变量，不要提交到 Git，也不要贴进聊天窗口。</p></div>
+        </li>
+        <li>
+          <span class="step-no">03</span>
+          <div><h3>按模型 ID 调用</h3><p>免费模型必须用带 <code>:free</code> 或平台标注的准确 ID，名字写错会直接按付费计费。</p></div>
+        </li>
+      </ol>
+      <div class="guide-code glass">
+        <div class="panel-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="panel-title">.env</span>
+          <button class="copy-btn" data-copy="export OPENROUTER_API_KEY=sk-or-xxxx
+export SILICONFLOW_API_KEY=sk-xxxx
+# 免费额度用完即停，务必在控制台开启额度告警" type="button" aria-label="复制环境变量示例">
+            <svg><use href="#i-copy"/></svg>
+          </button>
+        </div>
+        <pre class="code"><code><span class="c-com"># 环境变量，别写进代码</span>
+<span class="c-key">export</span> OPENROUTER_API_KEY=<span class="c-str">sk-or-xxxx</span>
+<span class="c-key">export</span> SILICONFLOW_API_KEY=<span class="c-str">sk-xxxx</span>
+
+<span class="c-com"># 免费额度用完即停</span>
+<span class="c-com"># 务必在控制台开启额度告警</span></code></pre>
+        <div class="guide-note">
+          <svg><use href="#i-alert"/></svg>
+          <p>免费层普遍有 RPM / RPD / TPM 限制，遇到 429 用指数退避重试，别用多账号刷额度。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner glass">
+    <div class="footer-brand">
+      <span class="brand-mark small"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h9M5 17h5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+      <div>
+        <strong>FreeToken Radar</strong>
+        <p>数据来自各平台官方页面与公开资讯，仅供信息聚合参考，不售卖、不代领任何 API Key。</p>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>最后抓取 <b id="footTime">--</b></span>
+      <span>数据源 <b id="footSources">--</b></span>
+      <a href="#top">回到顶部 ↑</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top glass" id="toTop" type="button" aria-label="回到顶部"><svg><use href="#i-up"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="data/offers.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

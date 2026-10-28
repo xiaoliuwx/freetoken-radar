@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "name": "FreeToken 官方台账",
+      "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/main/README.md",
+      "fallbacks": [
+        "https://cdn.jsdelivr.net/gh/AIPMAndy/FreeToken@main/README.md",
+        "https://ghproxy.net/https://raw.githubusercontent.com/AIPMAndy/FreeToken/main/README.md"
+      ],
+      "kind": "markdown",
+      "limit": 6
+    },
+    {
+      "name": "什么值得买 · AI 权益清单",
+      "url": "https://post.smzdm.com/p/awwo0lpk/",
+      "fallbacks": ["https://post.smzdm.com/p/awwo0lpk/p1/"],
+      "kind": "html",
+      "limit": 8
+    },
+    {
+      "name": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/api/v1/models",
+      "fallbacks": [],
+      "kind": "openrouter",
+      "limit": 3
+    }
+  ],
+  "keywords": ["免费", "赠送", "限免", "额度", "Token", "token", "白送", "限时", "补偿", "free"],
+  "exclude": ["广告", "优惠券", "二手", "代充", "兑换码"]
+}

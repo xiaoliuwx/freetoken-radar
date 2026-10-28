@@ -1,0 +1,533 @@
+{
+  "round": 11,
+  "time": "2026-10-29 01:14:18",
+  "url": "http://127.0.0.1:55954/index.html",
+  "total": 100.0,
+  "threshold": 92,
+  "passed": true,
+  "weakest": {
+    "key": "functional",
+    "name": "功能性",
+    "score": 100.0
+  },
+  "dimensions": {
+    "functional": {
+      "name": "功能性",
+      "weight": 25,
+      "score": 100.0,
+      "checks": [
+        {
+          "id": "cards",
+          "label": "卡片渲染数量 ≥ 20",
+          "pass": true,
+          "value": "28 张",
+          "detail": ""
+        },
+        {
+          "id": "links",
+          "label": "卡片均指向官方 http 链接",
+          "pass": true,
+          "value": "28/28",
+          "detail": ""
+        },
+        {
+          "id": "search",
+          "label": "搜索能过滤结果",
+          "pass": true,
+          "value": "命中 1 个",
+          "detail": ""
+        },
+        {
+          "id": "cat",
+          "label": "分类筛选生效",
+          "pass": true,
+          "value": "限时 5 个",
+          "detail": ""
+        },
+        {
+          "id": "region",
+          "label": "地区筛选生效",
+          "pass": true,
+          "value": "国内 16 个",
+          "detail": ""
+        },
+        {
+          "id": "sort",
+          "label": "排序可切换且生效",
+          "pass": true,
+          "value": "首位额度 10亿",
+          "detail": ""
+        },
+        {
+          "id": "view",
+          "label": "表格视图与卡片数据一致",
+          "pass": true,
+          "value": "28 行",
+          "detail": ""
+        },
+        {
+          "id": "saved",
+          "label": "收藏写入清单",
+          "pass": true,
+          "value": "清单 1 项",
+          "detail": ""
+        },
+        {
+          "id": "saved_persist",
+          "label": "刷新后收藏保留",
+          "pass": true,
+          "value": "清单 1 项",
+          "detail": ""
+        },
+        {
+          "id": "news",
+          "label": "资讯列表渲染 ≥ 8 条",
+          "pass": true,
+          "value": "12 条",
+          "detail": ""
+        },
+        {
+          "id": "news_more",
+          "label": "资讯可展开更多",
+          "pass": true,
+          "value": "12 → 17",
+          "detail": ""
+        },
+        {
+          "id": "limited",
+          "label": "限时活动区有内容",
+          "pass": true,
+          "value": "3 张",
+          "detail": ""
+        },
+        {
+          "id": "th_sort",
+          "label": "表格表头点击排序生效",
+          "pass": true,
+          "value": "Google Gemini API → 讯飞星辰 MaaS",
+          "detail": ""
+        },
+        {
+          "id": "saved_filter",
+          "label": "「我的清单」只显示收藏项",
+          "pass": true,
+          "value": "1 张",
+          "detail": ""
+        },
+        {
+          "id": "theme",
+          "label": "深浅主题可切换且生效",
+          "pass": true,
+          "value": "rgb(8, 9, 16) → rgb(238, 241, 248)",
+          "detail": ""
+        }
+      ]
+    },
+    "interaction": {
+      "name": "交互细节",
+      "weight": 20,
+      "score": 100.0,
+      "checks": [
+        {
+          "id": "latency",
+          "label": "点击到重绘 < 120ms",
+          "pass": true,
+          "value": "2.9ms",
+          "detail": ""
+        },
+        {
+          "id": "tap",
+          "label": "移动端点击热区 ≥ 40px（≥90%）",
+          "pass": true,
+          "value": "92%",
+          "detail": "免费模型 · Recursi 225x22, Google Gemini  223x22, OpenRouter 免费模 235x22, Cloudflare Wor 244x22, 硅基流动 SiliconFl 242x22, 阿里云百炼 / Qwen · 243x22, 旧版界面 46x20"
+        },
+        {
+          "id": "sheet",
+          "label": "移动端筛选面板可打开",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "esc",
+          "label": "Esc 可关闭浮层",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "hotkey",
+          "label": "/ 快捷键聚焦搜索",
+          "pass": true,
+          "value": "searchInput",
+          "detail": ""
+        },
+        {
+          "id": "empty",
+          "label": "空状态提示",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "reset",
+          "label": "空状态可一键重置",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "af",
+          "label": "已选条件可视化",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "spy",
+          "label": "滚动联动导航高亮",
+          "pass": true,
+          "value": "news",
+          "detail": ""
+        },
+        {
+          "id": "desktop_exclusive",
+          "label": "桌面端不出现移动端专属控件",
+          "pass": true,
+          "value": "{'railToggle': False, 'tabbar': False}",
+          "detail": ""
+        },
+        {
+          "id": "mobile_exclusive",
+          "label": "移动端不出现桌面专属控件",
+          "pass": true,
+          "value": "{'rail': False, 'viewToggle': False, 'sort': False}",
+          "detail": ""
+        },
+        {
+          "id": "tab_focus",
+          "label": "键盘 Tab 可达且有焦点环",
+          "pass": true,
+          "value": "A Kimi K3.1 Pr",
+          "detail": ""
+        },
+        {
+          "id": "tabbar",
+          "label": "移动端底部标签栏可用",
+          "pass": true,
+          "value": "4 个入口",
+          "detail": ""
+        },
+        {
+          "id": "tab_jump",
+          "label": "底部标签可跳转分区",
+          "pass": true,
+          "value": "scrollY=8035",
+          "detail": ""
+        }
+      ]
+    },
+    "visual": {
+      "name": "视觉样式",
+      "weight": 20,
+      "score": 100.0,
+      "checks": [
+        {
+          "id": "contrast",
+          "label": "文本对比度达 WCAG AA（≥95%）",
+          "pass": true,
+          "value": "100%（0/140 不达标）",
+          "detail": ""
+        },
+        {
+          "id": "overflow",
+          "label": "三档宽度无横向溢出",
+          "pass": true,
+          "value": "{\"1440\": 0, \"768\": 0, \"390\": 0}",
+          "detail": ""
+        },
+        {
+          "id": "font",
+          "label": "无过小字号（<10.5px ≤2%）",
+          "pass": true,
+          "value": "1%",
+          "detail": ""
+        },
+        {
+          "id": "card_h",
+          "label": "卡片高度不过矮（≥180px）",
+          "pass": true,
+          "value": "250.7px",
+          "detail": ""
+        },
+        {
+          "id": "no_error",
+          "label": "无 JS 运行时错误",
+          "pass": true,
+          "value": "0 个",
+          "detail": ""
+        },
+        {
+          "id": "contrast_light",
+          "label": "浅色主题对比度达 AA（≥95%）",
+          "pass": true,
+          "value": "100%（0/140 不达标）",
+          "detail": ""
+        },
+        {
+          "id": "glass",
+          "label": "液态玻璃材质保留（≥6 处 blur）",
+          "pass": true,
+          "value": "47 处",
+          "detail": ""
+        },
+        {
+          "id": "radius",
+          "label": "卡片圆角统一",
+          "pass": true,
+          "value": "['16px']",
+          "detail": ""
+        },
+        {
+          "id": "density",
+          "label": "首屏可见卡片 ≥ 3 张",
+          "pass": true,
+          "value": "10 张",
+          "detail": ""
+        }
+      ]
+    },
+    "performance": {
+      "name": "跟手性",
+      "weight": 15,
+      "score": 100.0,
+      "checks": [
+        {
+          "id": "fcp",
+          "label": "FCP < 1200ms",
+          "pass": true,
+          "value": "942.0ms",
+          "detail": ""
+        },
+        {
+          "id": "dcl",
+          "label": "DOMContentLoaded < 900ms",
+          "pass": true,
+          "value": "244.0ms",
+          "detail": ""
+        },
+        {
+          "id": "scroll_p95",
+          "label": "滚动帧 p95 ≤ 34ms",
+          "pass": true,
+          "value": "6.2ms",
+          "detail": ""
+        },
+        {
+          "id": "jank",
+          "label": "掉帧率 ≤ 12%",
+          "pass": true,
+          "value": "0%",
+          "detail": ""
+        },
+        {
+          "id": "nodes",
+          "label": "DOM 节点 < 3000",
+          "pass": true,
+          "value": "1203",
+          "detail": ""
+        },
+        {
+          "id": "assets",
+          "label": "CSS+JS < 260KB",
+          "pass": true,
+          "value": "96.6KB",
+          "detail": ""
+        },
+        {
+          "id": "rerender",
+          "label": "二次渲染均值 < 80ms",
+          "pass": true,
+          "value": "2.1ms",
+          "detail": ""
+        }
+      ]
+    },
+    "a11y": {
+      "name": "可访问性",
+      "weight": 10,
+      "score": 100.0,
+      "checks": [
+        {
+          "id": "names",
+          "label": "可交互元素均有可访问名称（≥98%）",
+          "pass": true,
+          "value": "120/120",
+          "detail": ""
+        },
+        {
+          "id": "lang",
+          "label": "声明 lang",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "title",
+          "label": "有标题与描述",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "live",
+          "label": "Toast 使用 aria-live",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "rm",
+          "label": "支持 prefers-reduced-motion",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "aria_state",
+          "label": "单选组 aria-selected 唯一",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        }
+      ]
+    },
+    "content": {
+      "name": "信息架构",
+      "weight": 10,
+      "score": 100.0,
+      "checks": [
+        {
+          "id": "card_fields",
+          "label": "卡片信息完整（额度/说明/类型/入口）",
+          "pass": true,
+          "value": "28/28",
+          "detail": ""
+        },
+        {
+          "id": "nav",
+          "label": "分区导航存在",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "compare",
+          "label": "具备对比视图（表格）",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "saved_ia",
+          "label": "具备收藏工作流",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "disclaimer",
+          "label": "有数据来源与免责声明",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        },
+        {
+          "id": "meta_rate",
+          "label": "卡片均标注核验日期",
+          "pass": true,
+          "value": "100%",
+          "detail": ""
+        },
+        {
+          "id": "src_rate",
+          "label": "资讯均标注来源",
+          "pass": true,
+          "value": "100%",
+          "detail": ""
+        },
+        {
+          "id": "shortcut",
+          "label": "界面上有快捷键提示",
+          "pass": true,
+          "value": "",
+          "detail": ""
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "card_count": 28,
+    "card_height_min": 250.7,
+    "card_links_ok": 28,
+    "fcp": 942.0,
+    "dcl": 244.0,
+    "dom_nodes": 1203,
+    "asset_kb": 96.6,
+    "contrast": {
+      "checked": 140,
+      "fail": 0,
+      "passRate": 1,
+      "samples": []
+    },
+    "text_sizes": {
+      "total": 524,
+      "small": 3,
+      "rate": 0.0057251908396946565
+    },
+    "a11y": {
+      "total": 120,
+      "missing": 0,
+      "named": 120,
+      "hasLang": true,
+      "hasTitle": true,
+      "hasDesc": true,
+      "liveRegion": true,
+      "reducedMotion": true
+    },
+    "overflow": {
+      "1440": 0,
+      "768": 0,
+      "390": 0
+    },
+    "interaction_ms": 2.9,
+    "scroll": {
+      "count": 56,
+      "p50": 6.099999999999454,
+      "p95": 6.200000000000728,
+      "jankRate": 0
+    },
+    "contrast_light": {
+      "checked": 140,
+      "fail": 0,
+      "passRate": 1,
+      "samples": []
+    },
+    "tap": {
+      "total": 93,
+      "small": 7,
+      "rate": 0.9247311827956989,
+      "bad": [
+        "免费模型 · Recursi 225x22",
+        "Google Gemini  223x22",
+        "OpenRouter 免费模 235x22",
+        "Cloudflare Wor 244x22",
+        "硅基流动 SiliconFl 242x22",
+        "阿里云百炼 / Qwen · 243x22",
+        "旧版界面 46x20"
+      ]
+    },
+    "rerender_ms": 2.1
+  }
+}
