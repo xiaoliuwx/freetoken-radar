@@ -3,9 +3,9 @@ window.__FREE_TOKEN_DATA__ = {
   "meta": {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
-    "updated": "2026-10-29",
-    "generated_at": "2026-10-29T23:26:54+08:00",
-    "generated_label": "2026-10-29 23:26",
+    "updated": "2026-10-30",
+    "generated_at": "2026-10-30T00:27:26+08:00",
+    "generated_label": "2026-10-30 00:27",
     "offline": false,
     "stats": {
       "total": 28,
@@ -685,14 +685,6 @@ window.__FREE_TOKEN_DATA__ = {
   "news": [
     {
       "date": "2026-10-30",
-      "title": "临期提醒：腾讯 Token Plan 限时价 / 基元律动活动到期",
-      "summary": "腾讯 5 款模型积分价下调至 10-30 12:00；基元律动买一送一、实名 18 元额度同天截止。",
-      "source": "AI 模型优惠速报",
-      "url": "https://post.smzdm.com/p/awwo0lpk/",
-      "tag": "预警"
-    },
-    {
-      "date": "2026-10-29",
       "title": "Kimi K3.1 Pro 限流致歉：全体订阅会员补偿 25% 额度",
       "summary": "所有档位订阅会员，按月度额度总额的 25% 做一次一次性重置补偿（约等于白送一周用量）；用量不足 25% 的直接清零重算。无需申领，用量条自动刷新。",
       "source": "什么值得买 · AI 权益清单",
@@ -701,7 +693,7 @@ window.__FREE_TOKEN_DATA__ = {
       "live": true
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "title": "智谱 ZCode 每日 3 亿 GLM-5.3-Flash 免费额度上线",
       "summary": "App 内每日发放 3 亿 GLM-5.3-Flash Token，需升级到最新版，领取后切到 Global Building 并选 GLM-5.3-Flash 模型。",
       "source": "什么值得买 · AI 权益清单",
@@ -710,7 +702,7 @@ window.__FREE_TOKEN_DATA__ = {
       "live": true
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "title": "免费模型 · Recursive: Flint (free)",
       "summary": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recu…",
       "source": "OpenRouter 免费模型",
@@ -719,7 +711,7 @@ window.__FREE_TOKEN_DATA__ = {
       "live": true
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "title": "免费模型 · XingChen: Xing4.0 29B A4B (free)",
       "summary": "Xing4.0-29B-A4B is an open-weight mixture-of-experts language model from China Telecom's AI team (TeleAI) and the successor to the…",
       "source": "OpenRouter 免费模型",
@@ -728,13 +720,21 @@ window.__FREE_TOKEN_DATA__ = {
       "live": true
     },
     {
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "title": "免费模型 · NVIDIA: Nemotron 3.5 Super VL (free)",
       "summary": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B to…",
       "source": "OpenRouter 免费模型",
       "url": "https://openrouter.ai/nvidia/nemotron-3.5-super-vl:free",
       "tag": "模型",
       "live": true
+    },
+    {
+      "date": "2026-10-30",
+      "title": "临期提醒：腾讯 Token Plan 限时价 / 基元律动活动到期",
+      "summary": "腾讯 5 款模型积分价下调至 10-30 12:00；基元律动买一送一、实名 18 元额度同天截止。",
+      "source": "AI 模型优惠速报",
+      "url": "https://post.smzdm.com/p/awwo0lpk/",
+      "tag": "预警"
     },
     {
       "date": "2026-10-28",
