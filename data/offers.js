@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-10-31",
-    "generated_at": "2026-10-31T19:09:56+08:00",
-    "generated_label": "2026-10-31 19:09",
+    "generated_at": "2026-10-31T19:48:43+08:00",
+    "generated_label": "2026-10-31 19:48",
     "offline": false,
     "stats": {
       "total": 28,
@@ -13,7 +13,7 @@ window.__FREE_TOKEN_DATA__ = {
       "newbie": 9,
       "limited": 5,
       "oss": 4,
-      "live": 9
+      "live": 11
     },
     "sources": [
       {
@@ -25,8 +25,8 @@ window.__FREE_TOKEN_DATA__ = {
       {
         "name": "什么值得买 · AI 权益清单",
         "url": "https://post.smzdm.com/p/awwo0lpk/",
-        "ok": false,
-        "items": 0
+        "ok": true,
+        "items": 2
       },
       {
         "name": "OpenRouter 免费模型",
@@ -685,6 +685,24 @@ window.__FREE_TOKEN_DATA__ = {
   "news": [
     {
       "date": "2026-10-31",
+      "title": "Kimi K3.1 Pro 限流致歉：全体订阅会员补偿 25% 额度",
+      "summary": "所有档位订阅会员，按月度额度总额的 25% 做一次一次性重置补偿（约等于白送一周用量）；用量不足 25% 的直接清零重算。无需申领，用量条自动刷新。",
+      "source": "什么值得买 · AI 权益清单",
+      "url": "https://kimi.ai",
+      "tag": "实时",
+      "live": true
+    },
+    {
+      "date": "2026-10-31",
+      "title": "智谱 ZCode 每日 3 亿 GLM-5.3-Flash 免费额度上线",
+      "summary": "App 内每日发放 3 亿 GLM-5.3-Flash Token，需升级到最新版，领取后切到 Global Building 并选 GLM-5.3-Flash 模型。",
+      "source": "什么值得买 · AI 权益清单",
+      "url": "https://zcode.bigmodel.cn",
+      "tag": "实时",
+      "live": true
+    },
+    {
+      "date": "2026-10-31",
       "title": "免费模型 · Recursive: Flint (free)",
       "summary": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recu…",
       "source": "OpenRouter 免费模型",
@@ -717,22 +735,6 @@ window.__FREE_TOKEN_DATA__ = {
       "source": "AI 模型优惠速报",
       "url": "https://post.smzdm.com/p/awwo0lpk/",
       "tag": "预警"
-    },
-    {
-      "date": "2026-10-28",
-      "title": "智谱 ZCode 每日 3 亿 GLM-5.3-Flash 免费额度上线",
-      "summary": "App 内每日 19:00 开领，当天 23:00–次日 09:00 可用，接替 1024 那波已清零的 5 亿 Tokens 活动。",
-      "source": "什么值得买 · AI 权益清单",
-      "url": "https://zcode.bigmodel.cn/",
-      "tag": "国内"
-    },
-    {
-      "date": "2026-10-28",
-      "title": "Kimi K3.1 Pro 限流致歉，订阅会员补偿 25% 额度",
-      "summary": "所有档位订阅会员按月度额度 25% 一次性重置，系统自动到账；纯免费用户不在补偿范围。",
-      "source": "Kimi 官方 / smzdm",
-      "url": "https://www.kimi.ai/",
-      "tag": "国内"
     },
     {
       "date": "2026-10-28",
