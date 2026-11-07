@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-07",
-    "generated_at": "2026-11-07T08:32:25+08:00",
-    "generated_label": "2026-11-07 08:32",
+    "generated_at": "2026-11-07T09:38:19+08:00",
+    "generated_label": "2026-11-07 09:38",
     "offline": false,
     "stats": {
       "total": 28,
@@ -703,6 +703,15 @@ window.__FREE_TOKEN_DATA__ = {
     },
     {
       "date": "2026-11-07",
+      "title": "免费模型 · LiquidAI: LFM3-1.7B (free)",
+      "summary": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It r…",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
+      "date": "2026-11-07",
       "title": "免费模型 · Crouton Alpha",
       "summary": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agenti…",
       "source": "OpenRouter 免费模型",
@@ -716,15 +725,6 @@ window.__FREE_TOKEN_DATA__ = {
       "summary": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recu…",
       "source": "OpenRouter 免费模型",
       "url": "https://openrouter.ai/recursive/flint-v1.0:free",
-      "tag": "模型",
-      "live": true
-    },
-    {
-      "date": "2026-11-07",
-      "title": "免费模型 · XingChen: Xing4.0 29B A4B (free)",
-      "summary": "Xing4.0-29B-A4B is an open-weight mixture-of-experts language model from China Telecom's AI team (TeleAI) and the successor to the…",
-      "source": "OpenRouter 免费模型",
-      "url": "https://openrouter.ai/xingchen-agi/xing4.0-29b-a4b:free",
       "tag": "模型",
       "live": true
     },
