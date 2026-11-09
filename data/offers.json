@@ -3,8 +3,8 @@
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-10",
-    "generated_at": "2026-11-10T05:29:24+08:00",
-    "generated_label": "2026-11-10 05:29",
+    "generated_at": "2026-11-10T06:21:19+08:00",
+    "generated_label": "2026-11-10 06:21",
     "offline": false,
     "stats": {
       "total": 28,
@@ -702,19 +702,19 @@
     },
     {
       "date": "2026-11-10",
-      "title": "免费模型 · LiquidAI: LFM3-1.7B (free)",
-      "summary": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It r…",
+      "title": "免费模型 · Thinking Machines: Inkling 2 Small (free)",
+      "summary": "Inkling 2 Small is a multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 5…",
       "source": "OpenRouter 免费模型",
-      "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+      "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
       "tag": "模型",
       "live": true
     },
     {
       "date": "2026-11-10",
-      "title": "免费模型 · Crouton Alpha",
-      "summary": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agenti…",
+      "title": "免费模型 · LiquidAI: LFM3-1.7B (free)",
+      "summary": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It r…",
       "source": "OpenRouter 免费模型",
-      "url": "https://openrouter.ai/stealth/crouton-alpha",
+      "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
       "tag": "模型",
       "live": true
     },
