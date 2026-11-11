@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-11",
-    "generated_at": "2026-11-11T14:31:37+08:00",
-    "generated_label": "2026-11-11 14:31",
+    "generated_at": "2026-11-11T15:51:24+08:00",
+    "generated_label": "2026-11-11 15:51",
     "offline": false,
     "stats": {
       "total": 28,
@@ -703,6 +703,15 @@ window.__FREE_TOKEN_DATA__ = {
     },
     {
       "date": "2026-11-11",
+      "title": "免费模型 · Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "summary": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding, agentic cap…",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
+      "date": "2026-11-11",
       "title": "免费模型 · Thinking Machines: Inkling 2 Small (free)",
       "summary": "Inkling 2 Small is a multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 5…",
       "source": "OpenRouter 免费模型",
@@ -716,15 +725,6 @@ window.__FREE_TOKEN_DATA__ = {
       "summary": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It r…",
       "source": "OpenRouter 免费模型",
       "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
-      "tag": "模型",
-      "live": true
-    },
-    {
-      "date": "2026-11-11",
-      "title": "免费模型 · Recursive: Flint (free)",
-      "summary": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recu…",
-      "source": "OpenRouter 免费模型",
-      "url": "https://openrouter.ai/recursive/flint-v1.0:free",
       "tag": "模型",
       "live": true
     },
