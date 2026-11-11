@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-11",
-    "generated_at": "2026-11-11T18:47:42+08:00",
-    "generated_label": "2026-11-11 18:47",
+    "generated_at": "2026-11-11T19:44:36+08:00",
+    "generated_label": "2026-11-11 19:44",
     "offline": false,
     "stats": {
       "total": 28,
@@ -13,7 +13,7 @@ window.__FREE_TOKEN_DATA__ = {
       "newbie": 9,
       "limited": 5,
       "oss": 4,
-      "live": 11
+      "live": 12
     },
     "sources": [
       {
@@ -26,7 +26,7 @@ window.__FREE_TOKEN_DATA__ = {
         "name": "什么值得买 · AI 权益清单",
         "url": "https://post.smzdm.com/p/awwo0lpk/",
         "ok": true,
-        "items": 2
+        "items": 3
       },
       {
         "name": "OpenRouter 免费模型",
@@ -698,6 +698,15 @@ window.__FREE_TOKEN_DATA__ = {
       "summary": "App 内每日发放 3 亿 GLM-5.3-Flash Token，需升级到最新版，领取后切到 Global Building 并选 GLM-5.3-Flash 模型。",
       "source": "什么值得买 · AI 权益清单",
       "url": "https://zcode.bigmodel.cn",
+      "tag": "实时",
+      "live": true
+    },
+    {
+      "date": "2026-11-11",
+      "title": "0 0 16亿Token堆出的AI短片，实际画质和成本到底是什么水平？",
+      "summary": "0 0 16亿Token堆出的AI短片，实际画质和成本到底是什么水平？",
+      "source": "什么值得买 · AI 权益清单",
+      "url": "https://post.smzdm.com/p/awwo0lpk/",
       "tag": "实时",
       "live": true
     },
