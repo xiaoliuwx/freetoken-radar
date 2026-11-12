@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-13",
-    "generated_at": "2026-11-13T05:02:09+08:00",
-    "generated_label": "2026-11-13 05:02",
+    "generated_at": "2026-11-13T05:58:28+08:00",
+    "generated_label": "2026-11-13 05:58",
     "offline": false,
     "stats": {
       "total": 28,
@@ -713,7 +713,7 @@ window.__FREE_TOKEN_DATA__ = {
     {
       "date": "2026-11-13",
       "title": "免费模型 · Thinking Machines: Inkling 2 Small (free)",
-      "summary": "Inkling 2 Small is a multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 5…",
+      "summary": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parame…",
       "source": "OpenRouter 免费模型",
       "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
       "tag": "模型",
