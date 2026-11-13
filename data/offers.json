@@ -3,8 +3,8 @@
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-14",
-    "generated_at": "2026-11-14T03:10:32+08:00",
-    "generated_label": "2026-11-14 03:10",
+    "generated_at": "2026-11-14T04:05:39+08:00",
+    "generated_label": "2026-11-14 04:05",
     "offline": false,
     "stats": {
       "total": 28,
@@ -702,6 +702,15 @@
     },
     {
       "date": "2026-11-14",
+      "title": "免费模型 · inclusionAI: Ling 3.2 Flash (free)",
+      "summary": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and …",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
+      "date": "2026-11-14",
       "title": "免费模型 · Baidu: ERNIE-5.5-Flash-Preview (free)",
       "summary": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding, agentic cap…",
       "source": "OpenRouter 免费模型",
@@ -715,15 +724,6 @@
       "summary": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parame…",
       "source": "OpenRouter 免费模型",
       "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
-      "tag": "模型",
-      "live": true
-    },
-    {
-      "date": "2026-11-14",
-      "title": "免费模型 · LiquidAI: LFM3-1.7B (free)",
-      "summary": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It r…",
-      "source": "OpenRouter 免费模型",
-      "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
       "tag": "模型",
       "live": true
     },
