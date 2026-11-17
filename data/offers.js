@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-17",
-    "generated_at": "2026-11-17T17:50:41+08:00",
-    "generated_label": "2026-11-17 17:50",
+    "generated_at": "2026-11-17T18:50:15+08:00",
+    "generated_label": "2026-11-17 18:50",
     "offline": false,
     "stats": {
       "total": 28,
@@ -688,7 +688,7 @@ window.__FREE_TOKEN_DATA__ = {
       "title": "Kimi K3.1 Pro 限流致歉：全体订阅会员补偿 25% 额度",
       "summary": "所有档位订阅会员，按月度额度总额的 25% 做一次一次性重置补偿（约等于白送一周用量）；用量不足 25% 的直接清零重算。无需申领，用量条自动刷新。",
       "source": "什么值得买 · AI 权益清单",
-      "url": "https://kimi.ai",
+      "url": "https://post.smzdm.com/p/awwo0lpk/",
       "tag": "实时",
       "live": true
     },
