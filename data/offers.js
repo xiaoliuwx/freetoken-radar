@@ -3,9 +3,9 @@ window.__FREE_TOKEN_DATA__ = {
   "meta": {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
-    "updated": "2026-11-18",
-    "generated_at": "2026-11-18T23:46:24+08:00",
-    "generated_label": "2026-11-18 23:46",
+    "updated": "2026-11-19",
+    "generated_at": "2026-11-19T00:51:57+08:00",
+    "generated_label": "2026-11-19 00:51",
     "offline": false,
     "stats": {
       "total": 28,
@@ -684,6 +684,51 @@ window.__FREE_TOKEN_DATA__ = {
   ],
   "news": [
     {
+      "date": "2026-11-19",
+      "title": "Kimi K3.1 Pro 限流致歉：全体订阅会员补偿 25% 额度",
+      "summary": "所有档位订阅会员，按月度额度总额的 25% 做一次一次性重置补偿（约等于白送一周用量）；用量不足 25% 的直接清零重算。无需申领，用量条自动刷新。",
+      "source": "什么值得买 · AI 权益清单",
+      "url": "https://post.smzdm.com/p/awwo0lpk/",
+      "tag": "实时",
+      "live": true
+    },
+    {
+      "date": "2026-11-19",
+      "title": "智谱 ZCode 每日 3 亿 GLM-5.3-Flash 免费额度上线",
+      "summary": "App 内每日发放 3 亿 GLM-5.3-Flash Token，需升级到最新版，领取后切到 Global Building 并选 GLM-5.3-Flash 模型。",
+      "source": "什么值得买 · AI 权益清单",
+      "url": "https://zcode.bigmodel.cn",
+      "tag": "实时",
+      "live": true
+    },
+    {
+      "date": "2026-11-19",
+      "title": "免费模型 · inclusionAI: Ling 3.2 Flash (free)",
+      "summary": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and …",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
+      "date": "2026-11-19",
+      "title": "免费模型 · Baidu: ERNIE-5.5-Flash-Preview (free)",
+      "summary": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding, agentic cap…",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
+      "date": "2026-11-19",
+      "title": "免费模型 · Thinking Machines: Inkling 2 Small (free)",
+      "summary": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parame…",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
       "date": "2026-11-18",
       "title": "七牛云 Conatus 限时免费 API · 试用 / 限时权益",
       "summary": "实名认证用户每天免费 1 亿 Token，2026-11-30 23:59（北京时间）结束；单笔充值超过 100 元后上限为每天 10 亿 Token。",
@@ -699,51 +744,6 @@ window.__FREE_TOKEN_DATA__ = {
       "source": "FreeToken 官方台账",
       "url": "https://mp.weixin.qq.com/",
       "tag": "政策",
-      "live": true
-    },
-    {
-      "date": "2026-11-18",
-      "title": "Kimi K3.1 Pro 限流致歉：全体订阅会员补偿 25% 额度",
-      "summary": "所有档位订阅会员，按月度额度总额的 25% 做一次一次性重置补偿（约等于白送一周用量）；用量不足 25% 的直接清零重算。无需申领，用量条自动刷新。",
-      "source": "什么值得买 · AI 权益清单",
-      "url": "https://post.smzdm.com/p/awwo0lpk/",
-      "tag": "实时",
-      "live": true
-    },
-    {
-      "date": "2026-11-18",
-      "title": "智谱 ZCode 每日 3 亿 GLM-5.3-Flash 免费额度上线",
-      "summary": "App 内每日发放 3 亿 GLM-5.3-Flash Token，需升级到最新版，领取后切到 Global Building 并选 GLM-5.3-Flash 模型。",
-      "source": "什么值得买 · AI 权益清单",
-      "url": "https://zcode.bigmodel.cn",
-      "tag": "实时",
-      "live": true
-    },
-    {
-      "date": "2026-11-18",
-      "title": "免费模型 · inclusionAI: Ling 3.2 Flash (free)",
-      "summary": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and …",
-      "source": "OpenRouter 免费模型",
-      "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
-      "tag": "模型",
-      "live": true
-    },
-    {
-      "date": "2026-11-18",
-      "title": "免费模型 · Baidu: ERNIE-5.5-Flash-Preview (free)",
-      "summary": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding, agentic cap…",
-      "source": "OpenRouter 免费模型",
-      "url": "https://openrouter.ai/baidu/ernie-5.5-flash-preview:free",
-      "tag": "模型",
-      "live": true
-    },
-    {
-      "date": "2026-11-18",
-      "title": "免费模型 · Thinking Machines: Inkling 2 Small (free)",
-      "summary": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parame…",
-      "source": "OpenRouter 免费模型",
-      "url": "https://openrouter.ai/thinkingmachines/inkling-2-small:free",
-      "tag": "模型",
       "live": true
     },
     {
