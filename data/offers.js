@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-18",
-    "generated_at": "2026-11-18T22:43:31+08:00",
-    "generated_label": "2026-11-18 22:43",
+    "generated_at": "2026-11-18T23:46:24+08:00",
+    "generated_label": "2026-11-18 23:46",
     "offline": false,
     "stats": {
       "total": 28,
@@ -685,6 +685,24 @@ window.__FREE_TOKEN_DATA__ = {
   "news": [
     {
       "date": "2026-11-18",
+      "title": "七牛云 Conatus 限时免费 API · 试用 / 限时权益",
+      "summary": "实名认证用户每天免费 1 亿 Token，2026-11-30 23:59（北京时间）结束；单笔充值超过 100 元后上限为每天 10 亿 Token。",
+      "source": "FreeToken 官方台账",
+      "url": "https://www.qiniu.com/ai/model/qiniu/conatus-free",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-11-18",
+      "title": "微信小程序成长计划 / CloudBase · 试用 / 限时权益",
+      "summary": "符合报名条件的小程序可申领 10 亿 Token + 10 万张生图资源包，领取后 6 个月有效；二期报名截至 2026-12-31。",
+      "source": "FreeToken 官方台账",
+      "url": "https://mp.weixin.qq.com/",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-11-18",
       "title": "Kimi K3.1 Pro 限流致歉：全体订阅会员补偿 25% 额度",
       "summary": "所有档位订阅会员，按月度额度总额的 25% 做一次一次性重置补偿（约等于白送一周用量）；用量不足 25% 的直接清零重算。无需申领，用量条自动刷新。",
       "source": "什么值得买 · AI 权益清单",
@@ -801,24 +819,6 @@ window.__FREE_TOKEN_DATA__ = {
       "summary": "公开价格页：tencent/Hunyuan-MT-7B、BAAI/bge-m3 等指定模型标记“免费”。",
       "source": "FreeToken 官方台账",
       "url": "https://cloud.siliconflow.cn/",
-      "tag": "政策",
-      "live": true
-    },
-    {
-      "date": "2026-10-22",
-      "title": "阿里云百炼 / Qwen · 试用 / 新人额度",
-      "summary": "新人各模型通常赠送 100 万 Token，限华北2（北京）地域，通常 90 天有效；以模型详情为准。",
-      "source": "FreeToken 官方台账",
-      "url": "https://bailian.console.aliyun.com/",
-      "tag": "政策",
-      "live": true
-    },
-    {
-      "date": "2026-10-22",
-      "title": "Cohere Evaluation API · 试用 / 新人额度",
-      "summary": "Evaluation Key 免费测试；试用密钥每月合计限制 1,000 次 API 调用。",
-      "source": "FreeToken 官方台账",
-      "url": "https://dashboard.cohere.com/",
       "tag": "政策",
       "live": true
     },
