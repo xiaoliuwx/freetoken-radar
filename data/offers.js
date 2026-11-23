@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-24",
-    "generated_at": "2026-11-24T03:38:04+08:00",
-    "generated_label": "2026-11-24 03:38",
+    "generated_at": "2026-11-24T04:27:15+08:00",
+    "generated_label": "2026-11-24 04:27",
     "offline": false,
     "stats": {
       "total": 28,
