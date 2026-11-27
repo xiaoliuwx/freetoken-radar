@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-27",
-    "generated_at": "2026-11-27T19:44:51+08:00",
-    "generated_label": "2026-11-27 19:44",
+    "generated_at": "2026-11-27T20:54:43+08:00",
+    "generated_label": "2026-11-27 20:54",
     "offline": false,
     "stats": {
       "total": 28,
@@ -703,15 +703,6 @@ window.__FREE_TOKEN_DATA__ = {
     },
     {
       "date": "2026-11-27",
-      "title": "免费模型 · inclusionAI: Ling 3.2 Flash (free)",
-      "summary": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and …",
-      "source": "OpenRouter 免费模型",
-      "url": "https://openrouter.ai/inclusionai/ling-3.2-flash:free",
-      "tag": "模型",
-      "live": true
-    },
-    {
-      "date": "2026-11-27",
       "title": "免费模型 · Baidu: ERNIE-5.5-Flash-Preview (free)",
       "summary": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding, agentic cap…",
       "source": "OpenRouter 免费模型",
@@ -725,6 +716,15 @@ window.__FREE_TOKEN_DATA__ = {
       "summary": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It r…",
       "source": "OpenRouter 免费模型",
       "url": "https://openrouter.ai/liquid/lfm-3-1.7b:free",
+      "tag": "模型",
+      "live": true
+    },
+    {
+      "date": "2026-11-27",
+      "title": "免费模型 · Particle AI: Particle-1 (free)",
+      "summary": "Particle-1 is a token-efficient agentic coding model from Particle AI, post-trained on DeepSeek V4.1 Flash. It is suited for softw…",
+      "source": "OpenRouter 免费模型",
+      "url": "https://openrouter.ai/particle-ai/particle-1:free",
       "tag": "模型",
       "live": true
     },
