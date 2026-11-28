@@ -4,8 +4,8 @@ window.__FREE_TOKEN_DATA__ = {
     "title": "FreeToken Radar · 免费 AI Token 实时雷达",
     "note": "所有额度信息来自平台官方页面与公开资讯，政策随时可能调整，领取前请以官方控制台显示为准。",
     "updated": "2026-11-28",
-    "generated_at": "2026-11-28T11:29:51+08:00",
-    "generated_label": "2026-11-28 11:29",
+    "generated_at": "2026-11-28T20:16:01+08:00",
+    "generated_label": "2026-11-28 20:16",
     "offline": false,
     "stats": {
       "total": 28,
@@ -685,6 +685,24 @@ window.__FREE_TOKEN_DATA__ = {
   "news": [
     {
       "date": "2026-11-28",
+      "title": "ChatGPT · 限时活动",
+      "summary": "Codex 免费 Reset",
+      "source": "FreeToken 官方台账",
+      "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/main/README.md",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-11-28",
+      "title": "豆包工作 · 限时活动",
+      "summary": "低倍率模型 / 小额免费",
+      "source": "FreeToken 官方台账",
+      "url": "https://raw.githubusercontent.com/AIPMAndy/FreeToken/main/README.md",
+      "tag": "政策",
+      "live": true
+    },
+    {
+      "date": "2026-11-28",
       "title": "Kimi K3.1 Pro 限流致歉：全体订阅会员补偿 25% 额度",
       "summary": "所有档位订阅会员，按月度额度总额的 25% 做一次一次性重置补偿（约等于白送一周用量）；用量不足 25% 的直接清零重算。无需申领，用量条自动刷新。",
       "source": "什么值得买 · AI 权益清单",
@@ -801,24 +819,6 @@ window.__FREE_TOKEN_DATA__ = {
       "summary": "免费模型 20 RPM、50 请求/日；账户累计购买至少 $10 额度后上限可至 1,000 请求/日。",
       "source": "FreeToken 官方台账",
       "url": "https://openrouter.ai/models?max_price=0",
-      "tag": "政策",
-      "live": true
-    },
-    {
-      "date": "2026-10-22",
-      "title": "Cloudflare Workers AI · 官方免费层",
-      "summary": "每天免费 10,000 Neurons；不是每天 10,000 次请求。",
-      "source": "FreeToken 官方台账",
-      "url": "https://dash.cloudflare.com/",
-      "tag": "政策",
-      "live": true
-    },
-    {
-      "date": "2026-10-22",
-      "title": "硅基流动 SiliconFlow · 部分模型免费",
-      "summary": "公开价格页：tencent/Hunyuan-MT-7B、BAAI/bge-m3 等指定模型标记“免费”。",
-      "source": "FreeToken 官方台账",
-      "url": "https://cloud.siliconflow.cn/",
       "tag": "政策",
       "live": true
     },
